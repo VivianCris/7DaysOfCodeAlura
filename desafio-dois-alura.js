@@ -5,6 +5,7 @@ const linguagemEstudada = prompt(
   "Qual linguagem de programação você está estudando?"
 );
 
-const saudacao = `Olá, ${nome}, você tem ${idade} e está aprendendo ${linguagemEstudada}!`;
+const saudacao = `Olá, ${nome}, você tem ${idade} anos e está aprendendo
+${linguagemEstudada}!`;
 
 console.log(saudacao);

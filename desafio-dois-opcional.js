@@ -1,24 +1,27 @@
 const prompt = require("prompt-sync")();
-let nome = prompt("Qual é o seu nome?");
-let idade = prompt("Qual é a sua idade?");
-let linguagemEstudada = prompt(
+const nome = prompt("Qual é o seu nome?");
+const idade = prompt("Qual é a sua idade?");
+const linguagemEstudada = prompt(
   "Qual linguagem de programação você está estudando?"
 );
 
-let saudacao = `Olá, ${nome}, você tem ${idade} anos e está aprendendo ${linguagemEstudada}!`;
+const saudacao = `Olá, ${nome}, você tem ${idade} anos e está aprendendo ${linguagemEstudada}!`;
 
 console.log(saudacao);
 
-let sim = 1;
-let nao = 2;
-let answer = prompt(
+const sim = 1;
+const nao = 2;
+
+const answer = prompt(
   `Você gosta de estudar ${linguagemEstudada}?Responda com o número ${sim} para SIM ou ${nao} para NÃO.`
 );
 
+let message;
+
 if (answer == sim) {
-  answer = `${sim} > Muito bom!Continue estudando e você terá muito sucesso.`;
+  message = `${sim} > Muito bom!Continue estudando e você terá muito sucesso.`;
 } else if (answer == nao) {
-  answer = `${nao} > Ahh que pena... Já tentou aprender outras linguagens?`;
+  message = `${nao} > Ahh que pena... Já tentou aprender outras linguagens?`;
 }
 
-console.log(answer);
+console.log(message);

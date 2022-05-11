@@ -1,6 +1,4 @@
-// 2 - Se Front-End: - React
-//                    - Vue
-//     Se Back-End:  - C#
+// 2 - Se Back-End:  - C#
 //                   - Java
 
 // 3 - Por último: - seguir se especializando
@@ -24,9 +22,27 @@ const answer = prompt(
 let message;
 
 if (answer == frontEnd) {
-  message = `Você se interessa por Front-end! Um Front-End developer cria websites e aplicativos utilizando web linguagens como: HTML, CSS E JavaScript.`;
+  message = `Você se interessa por Front-end! Um Front-End developer cria websites e aplicativos utilizando web linguagens como: 
+  HTML, CSS E JavaScript.`;
 } else if (answer == backEnd) {
-  message = `Você se interessa por Back-end! Um desenvolvedor de back-end é um desenvolvedor de software especializado na criação de funções do lado do servidor do software. Eles geralmente trabalham com linguagens de programação como Python, C, PHP, Java e Ruby.`;
+  message = `Você se interessa por Back-end! 
+  Um desenvolvedor de back-end é um desenvolvedor de software especializado na criação de funções do lado do servidor do software. 
+  Eles geralmente trabalham com linguagens de programação como:
+  Python, C, PHP, Java e Ruby.`;
+}
+
+console.log(message);
+
+const react = 1;
+const vue = 2;
+
+const questionDoisF = prompt(`Você se interessa em aprender React ou Vue?
+  Responda ${react} para React ou ${vue} para Vue`);
+
+if (questionDoisF == react) {
+  message = `React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.`;
+} else if (questionDoisF == vue) {
+  message = `Also is a declarative, efficient, and flexible JavaScript library for building user interfaces. `;
 }
 
 console.log(message);

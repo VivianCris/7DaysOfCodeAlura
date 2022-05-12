@@ -6,14 +6,14 @@ const backEnd = 2;
 const question = prompt(
   `Qual é a área de desenvolvimento que você deseja seguir? Responda número ${frontEnd} para Front-End e número ${backEnd} para Back-End`
 );
-let messagemUm;
+let mensagemUm;
 
 if (question == frontEnd) {
-  messagemUm = "Você se interessa em aprender React ou Vue?";
+  mensagemUm = "Você se interessa em aprender React ou Vue?";
 } else if (question == backEnd) {
-  messagemUm = "Você se interessa em aprender C# ou Java?";
+  mensagemUm = "Você se interessa em aprender C# ou Java?";
 }
-//mensagemUm = ` Interessante , ${question} Essa é uma boa escolha!`;
+mensagemUm = ` Interessante , ${question} Essa é uma boa escolha!`;
 
 console.log(messagemUm);
 
@@ -27,13 +27,13 @@ console.log(messagemUm);
 // let messagemDois;
 
 // if (futurasDecisoes == fullstack) {
-//   messagemDois =
+//   mensagemDois =
 //     "A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.";
 // } else if (futurasDecisoes == aprofundarArea) {
-//   messagemDois = `Continue estudando para se desenvolver nessa área!`;
+//   mensagemDois = `Continue estudando para se desenvolver nessa área!`;
 // }
 
-// console.log(messagemDois);
+// console.log(mensagemDois);
 
 // const interessaLinguagem = prompt(
 //   `Que outras linguagens você gostaria de estudar?`

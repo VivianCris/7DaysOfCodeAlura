@@ -1,48 +1,51 @@
-// 2 - Se Back-End:  - C#
-//                   - Java
-
-// 3 - Por último: - seguir se especializando
-//                 - se tornar fullstack
-
-// 4 - Inserir quantas tecnologias quiser
-
 const prompt = require("prompt-sync")();
-
-const question = prompt(
-  `Qual é a área de desenvolvimento que você deseja seguir?`
-);
 
 const frontEnd = 1;
 const backEnd = 2;
 
-const answer = prompt(
-  `Responda número ${frontEnd} para Front-End e número ${backEnd} para Back-End`
+const question = prompt(
+  `Qual é a área de desenvolvimento que você deseja seguir? Responda número ${frontEnd} para Front-End e número ${backEnd} para Back-End`
 );
+let messagemUm;
 
-let message;
-
-if (answer == frontEnd) {
-  message = `Você se interessa por Front-end! Um Front-End developer cria websites e aplicativos utilizando web linguagens como: 
-  HTML, CSS E JavaScript.`;
-} else if (answer == backEnd) {
-  message = `Você se interessa por Back-end! 
-  Um desenvolvedor de back-end é um desenvolvedor de software especializado na criação de funções do lado do servidor do software. 
-  Eles geralmente trabalham com linguagens de programação como:
-  Python, C, PHP, Java e Ruby.`;
+if (question == frontEnd) {
+  messagemUm = "Você se interessa em aprender React ou Vue?";
+} else if (question == backEnd) {
+  messagemUm = "Você se interessa em aprender C# ou Java?";
 }
+//mensagemUm = ` Interessante , ${question} Essa é uma boa escolha!`;
 
-console.log(message);
+console.log(messagemUm);
 
-const react = 1;
-const vue = 2;
+// const fullstack = 1;
+// const aprofundarArea = 2;
 
-const questionDoisF = prompt(`Você se interessa em aprender React ou Vue?
-  Responda ${react} para React ou ${vue} para Vue`);
+// const futurasDecisoes = prompt(
+//   `Você prefere se tornar fullstack ou seguir se aprofundando na área? Responda ${fullstack} para fullstack ou ${aprofundarArea} para seguir se especializando`
+// );
 
-if (questionDoisF == react) {
-  message = `React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.`;
-} else if (questionDoisF == vue) {
-  message = `Also is a declarative, efficient, and flexible JavaScript library for building user interfaces. `;
-}
+// let messagemDois;
 
-console.log(message);
+// if (futurasDecisoes == fullstack) {
+//   messagemDois =
+//     "A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.";
+// } else if (futurasDecisoes == aprofundarArea) {
+//   messagemDois = `Continue estudando para se desenvolver nessa área!`;
+// }
+
+// console.log(messagemDois);
+
+// const interessaLinguagem = prompt(
+//   `Que outras linguagens você gostaria de estudar?`
+// );
+
+// let novaLinguagem = "";
+
+// const outrasOpcoes = prompt(
+//   `Além de ${novaLinguagem} quais outras você gostaria de estudar? Digite ok para inserir novas linguagens`
+// );
+
+// while (outrasOpcoes == "ok") {
+//   outrasOpcoes = `${novaLinguagem} é muito interesante. Mais alguma?`;
+//   outrasOpcoes++;
+// }

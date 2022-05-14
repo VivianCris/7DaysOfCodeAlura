@@ -6,11 +6,12 @@ let mensagem = "";
 
 for (let i = 0; i < 3; i++) {
   numero = prompt("Digite um número entre 1 a 10.  ");
+
   if (numero == numeroSorteado) {
-    mensagem += ` ${numero} Parabéns, você acertou! `;
+    mensagem = ` ${numero} Parabéns, você acertou! `;
     console.log(mensagem);
   } else {
-    mensagem += ` ${numero} Que pena, você errou! `;
+    mensagem = ` ${numero} Que pena, você errou! `;
     console.log(mensagem);
   }
 }

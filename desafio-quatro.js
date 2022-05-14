@@ -10,12 +10,15 @@ for (let i = 0; i < 3; i++) {
   if (numero == numeroSorteado) {
     mensagem = ` ${numero} Parabéns, você acertou! `;
     console.log(mensagem);
+    break;
   } else {
     mensagem = ` ${numero} Que pena, você errou! `;
     console.log(mensagem);
   }
 }
 
-mensagem = `Você usou todas as chances e errou, o número 
+if (numero != numeroSorteado) {
+  mensagem = `Você usou todas as chances e errou, o número 
   sorteado era o número ${numeroSorteado}!`;
-console.log(mensagem);
+  console.log(mensagem);
+}

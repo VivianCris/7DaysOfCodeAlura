@@ -16,4 +16,6 @@ for (let i = 0; i < 3; i++) {
   }
 }
 
-//console.log(mensagem);
+mensagem = `Você usou todas as chances e errou, o número 
+  sorteado era o número ${numeroSorteado}!`;
+console.log(mensagem);

@@ -1,51 +1,13 @@
 const prompt = require("prompt-sync")();
 
-const frontEnd = 1;
-const backEnd = 2;
-
-const question = prompt(
-  `Qual é a área de desenvolvimento que você deseja seguir? Responda número ${frontEnd} para Front-End e número ${backEnd} para Back-End`
+const questao = prompt(
+  `Qual é a área que você deseja desenvolver? Responda: Front End ou Back End    `
 );
-let mensagemUm;
 
-if (question == frontEnd) {
-  mensagemUm = "Você se interessa em aprender React ou Vue?";
-} else if (question == backEnd) {
-  mensagemUm = "Você se interessa em aprender C# ou Java?";
-}
-mensagemUm = ` Interessante , ${question} Essa é uma boa escolha!`;
+const resposta = `Que legal sua escolha por ${questao}  `;
 
-console.log(messagemUm);
+console.log(resposta);
 
-// const fullstack = 1;
-// const aprofundarArea = 2;
+let area = "";
 
-// const futurasDecisoes = prompt(
-//   `Você prefere se tornar fullstack ou seguir se aprofundando na área? Responda ${fullstack} para fullstack ou ${aprofundarArea} para seguir se especializando`
-// );
-
-// let messagemDois;
-
-// if (futurasDecisoes == fullstack) {
-//   mensagemDois =
-//     "A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.";
-// } else if (futurasDecisoes == aprofundarArea) {
-//   mensagemDois = `Continue estudando para se desenvolver nessa área!`;
-// }
-
-// console.log(mensagemDois);
-
-// const interessaLinguagem = prompt(
-//   `Que outras linguagens você gostaria de estudar?`
-// );
-
-// let novaLinguagem = "";
-
-// const outrasOpcoes = prompt(
-//   `Além de ${novaLinguagem} quais outras você gostaria de estudar? Digite ok para inserir novas linguagens`
-// );
-
-// while (outrasOpcoes == "ok") {
-//   outrasOpcoes = `${novaLinguagem} é muito interesante. Mais alguma?`;
-//   outrasOpcoes++;
-// }
+let mensagem = "";

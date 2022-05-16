@@ -21,11 +21,10 @@ console.log(mensagem);
 const opUm = "Especializar";
 const opDois = "Fullstack";
 
-let questaoDois = prompt(
-  `Você deseja entre seguir se especializando na área escolhida
-  ou seguir se desenvolvendo para se tornar Fullstack? 
- Responda se ${opUm} ou se tornar ${opDois}   `
-);
+console.log(`Você deseja entre seguir se especializando na área escolhida
+ou seguir se desenvolvendo para se tornar Fullstack?`);
+
+let questaoDois = prompt(`Responda se ${opUm} ou se tornar ${opDois}: `);
 
 let mensagemDois = "";
 

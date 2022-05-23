@@ -4,6 +4,8 @@ const mensagem = prompt(`Deseja adicionar um item na sua lista de compras? `);
 
 let itens = [];
 
-let listaDeCompras = itens.push("Limão");
+for (let i = 0; i < 3; i++) {
+  listaDeCompras = itens.push(`${mensagem}`);
+}
 
 console.log(itens);

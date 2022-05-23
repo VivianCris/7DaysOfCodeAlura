@@ -21,7 +21,7 @@ console.log(mensagem);
 const opUm = "Especializar";
 const opDois = "Fullstack";
 
-console.log(`Você deseja entre seguir se especializando na área escolhida
+console.log(`Você deseja seguir se especializando na área escolhida
 ou seguir se desenvolvendo para se tornar Fullstack?`);
 
 let questaoDois = prompt(`Responda se ${opUm} ou se tornar ${opDois}: `);

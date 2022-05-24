@@ -10,6 +10,10 @@ while (respostaUm) {
   const resposta = prompt(
     ` ${perguntaUm} Responda ${respostaUm} ou ${respostaDois}  `
   );
+  if (resposta === respostaDois) {
+    console.log(`Nenhum item será adicionado a lista!`);
+    break;
+  }
 
   let produto = prompt(`Qual?   `);
 
@@ -17,3 +21,5 @@ while (respostaUm) {
 
   console.log(itens);
 }
+
+console.log(itens);

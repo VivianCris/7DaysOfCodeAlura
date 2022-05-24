@@ -1,11 +1,15 @@
 const prompt = require("prompt-sync")();
 
-const mensagem = prompt(`Deseja adicionar um item na sua lista de compras? `);
+const respostaUm = "sim";
+const respostaDois = "não";
 
-let itens = [];
+const perguntaUm = "Deseja adicionar um item na sua lista de compras?";
 
-for (let i = 0; i < 3; i++) {
-  listaDeCompras = itens.push(`${mensagem}`);
-}
+const resposta = prompt(
+  ` ${perguntaUm} Responda ${respostaUm} ou ${respostaDois}  `
+);
+
+let listaDeCompra = prompt(`Qual?   `);
+let itens = [`${listaDeCompra},`];
 
 console.log(itens);

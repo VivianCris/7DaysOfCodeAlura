@@ -26,15 +26,14 @@ while (true) {
 
   const perguntaDois = prompt(`Qual categoria esse item se encaixa?   `);
 
-  if (perguntaDois == vegetais) {
+  if (perguntaDois === vegetais) {
     vegetais.push(produto);
     console.log(`Vegetais: ${vegetais}`);
-  } else if (perguntaDois == higiene) {
+  } else if (perguntaDois === higiene) {
     higiene.push(produto);
     console.log(`Higiene: ${higiene}`);
   }
   console.log(itens);
 }
 
-console.log(`Vegetais: ${itens}`);
-console.log(`Higiene: ${itens}`);
+console.log(`Vegetais: ${itens}, Higiene: ${itens} `);

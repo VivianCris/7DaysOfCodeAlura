@@ -2,7 +2,11 @@ const prompt = require("prompt-sync")({ sigint: true });
 
 const respostaUm = "S";
 const respostaDois = "N";
+//let produto = "";
 let itens = [];
+let vegetais = [];
+let higiene = [];
+let groceries = [];
 
 while (true) {
   const perguntaUm = "Deseja adicionar um item na sua lista de compras?";
@@ -20,20 +24,14 @@ while (true) {
 
   itens.push(produto);
 
-  let vegetais = [];
-  let higiene = [];
-  let groceries = [];
-
   const perguntaDois = prompt(`Qual categoria esse item se encaixa?   `);
 
   if (perguntaDois === vegetais) {
     vegetais.push(produto);
-    console.log(`Vegetais: ${vegetais}`);
   } else if (perguntaDois === higiene) {
     higiene.push(produto);
-    console.log(`Higiene: ${higiene}`);
   }
   console.log(itens);
 }
-
-console.log(`Vegetais: ${itens}, Higiene: ${itens} `);
+console.log(itens);
+console.log(`Vegetais: ${vegetais}, Higiene: ${higiene} `);

@@ -28,10 +28,18 @@ while (true) {
 
   if (perguntaDois == vegetais) {
     vegetais.push(produto);
-    console.log(`Vegetais: ${produto}`);
+    console.log(`Vegetais: ${vegetais}`);
+  }
+  if (perguntaDois == higiene) {
+    vegetais.push(produto);
+    console.log(`Higiene: ${higiene}`);
   }
 
-  console.log(itens);
+  //console.log(itens);
+  console.log(`Vegetais: ${vegetais}`);
+  console.log(`Higiene: ${higiene}`);
 }
 
-console.log(`Vegetais: ${itens}`);
+console.log(itens);
+// console.log(`Vegetais: ${vegetais}`);
+// console.log(`Higiene: ${higiene}`);

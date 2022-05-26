@@ -24,9 +24,14 @@ while (true) {
   let higiene = [];
   let groceries = [];
 
-  produto = prompt(`Qual categoria esse item se encaixa?   `);
+  const perguntaDois = prompt(`Qual categoria esse item se encaixa?   `);
+
+  if (perguntaDois == vegetais) {
+    vegetais.push(produto);
+    console.log(`Vegetais: ${produto}`);
+  }
 
   console.log(itens);
 }
 
-console.log(itens);
+console.log(`Vegetais: ${itens}`);

@@ -6,7 +6,6 @@ const respostaDois = "N";
 let itens = [];
 let vegetais = [];
 let higiene = [];
-let groceries = [];
 
 while (true) {
   const perguntaUm = "Deseja adicionar um item na sua lista de compras?";
@@ -37,4 +36,4 @@ while (true) {
   console.log(itens);
 }
 
-console.log(vegetais, higiene);
+console.log("Vegetais: " + vegetais + ", Higiene: " + higiene);

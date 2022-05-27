@@ -23,6 +23,9 @@ while (true) {
 
   itens.push(produto);
 
+  //------------------------------------------------------
+  //           Começa segunda parte do desafio
+
   const perguntaDois = "Qual categoria esse item se encaixa: ";
 
   const categoria = prompt(`${perguntaDois} "vegetais", "higiene"?   `);

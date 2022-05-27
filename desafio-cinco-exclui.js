@@ -23,6 +23,9 @@ while (true) {
 
   itens.push(produto);
 
+  // ------------------------------------------------------------------
+  //                  Começa a segunda parte do desafio
+
   const perguntaDois = "Qual categoria esse item se encaixa: ";
 
   const categoria = prompt(`${perguntaDois} "vegetais", "higiene"?   `);
@@ -38,9 +41,21 @@ while (true) {
 
 console.log("Vegetais: " + vegetais + ", Higiene: " + higiene);
 
+//----------------------------------------------------------------------
+//                    Começa a terceira parte
+
 const listaDeCompras = [vegetais, higiene];
+
+//console.log(listaDeCompras);
 
 const perguntaTres = "Deseja excluir algum item da lista de compras?";
 
-const perguntaTresA = prompt(`${perguntaTres} Responda 1 para Sim   `);
-const excluirItem = prompt(` Qual?   `);
+const perguntaTresA = prompt(`${perguntaTres} Responda 1 para Sim  `);
+
+const excluirItem = prompt(` Qual?  `);
+
+if (perguntaTresA === "1") {
+  listaDeCompras.slice(excluirItem);
+}
+
+console.log(listaDeCompras);

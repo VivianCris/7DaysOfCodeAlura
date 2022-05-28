@@ -28,11 +28,11 @@ while (true) {
 
   const perguntaDois = "Qual categoria esse item se encaixa: ";
 
-  const categoria = prompt(`${perguntaDois} "vegetais", "higiene"?   `);
+  const categoria = prompt(`${perguntaDois} "1 = vegetais", "2 = higiene"? `);
 
-  if (categoria === "vegetais") {
+  if (categoria === "1") {
     vegetais.push(produto);
-  } else if (categoria === "higiene") {
+  } else if (categoria === "2") {
     higiene.push(produto);
   }
 
@@ -52,10 +52,6 @@ const perguntaTres = "Deseja excluir algum item da lista de compras?";
 
 const perguntaTresA = prompt(`${perguntaTres} Responda 1 para Sim  `);
 
-const excluirItem = prompt(` Qual?  `);
-
-if (perguntaTresA === "1") {
-  listaDeCompras.slice(excluirItem);
-}
+let excluirItem = prompt(` Qual?  `);
 
 console.log(listaDeCompras);

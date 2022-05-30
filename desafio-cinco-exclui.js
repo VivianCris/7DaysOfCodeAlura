@@ -44,14 +44,12 @@ console.log("Vegetais: " + vegetais + ", Higiene: " + higiene);
 //----------------------------------------------------------------------
 //                    Começa a terceira parte
 
-const listaDeCompras = [vegetais, higiene];
-
-//console.log(listaDeCompras);
+let listaDeCompras = [vegetais, higiene];
 
 const perguntaTres = "Deseja excluir algum item da lista de compras?";
 
 const perguntaTresA = prompt(`${perguntaTres} Responda 1 para Sim  `);
 
-let excluirItem = prompt(` Qual?  `);
+let excluirItem = prompt(`Qual?  `);
 
-console.log(listaDeCompras);
+excluirItem = prompt(`Vegetais: ${vegetais}, Higiene: ${higiene}`);

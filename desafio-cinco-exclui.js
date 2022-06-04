@@ -52,7 +52,7 @@ const perguntaTresA = prompt(`${perguntaTres} Responda 1 para Sim  `);
 
 let lista = `Vegetais: ${vegetais} Higiene: ${higiene}`;
 
-let excluirItem = prompt(`Lista de compras: \n ${lista}  \n\n Qual?`);
+let excluirItem = prompt(`Lista de compras: ${lista} Qual?`);
 
 if (vegetais.indexOf(excluirItem) != -1) {
   vegetais.splice(vegetais.indexOf(excluirItem), 1);

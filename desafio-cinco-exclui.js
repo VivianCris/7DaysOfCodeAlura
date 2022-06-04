@@ -50,6 +50,16 @@ const perguntaTres = "Deseja excluir algum item da lista de compras?";
 
 const perguntaTresA = prompt(`${perguntaTres} Responda 1 para Sim  `);
 
-let excluirItem = prompt(`Qual?  `);
+let lista = `Vegetais: ${vegetais} Higiene: ${higiene}`;
 
-excluirItem = prompt(`Vegetais: ${vegetais}, Higiene: ${higiene}`);
+let excluirItem = prompt(`Lista de compras: \n ${lista}  \n\n Qual?`);
+
+if (vegetais.indexOf(excluirItem) != -1) {
+  vegetais.splice(vegetais.indexOf(excluirItem), 1);
+  console.log(`O item ${excluirItem} foi removido com sucesso!`);
+} else if (higiene.indexOf(excluirItem) != -1) {
+  higiene.splice(higiene.indexOf(excluirItem), 1);
+  console.log(`O item ${excluirItem} foi removido com sucesso!`);
+}
+
+console.log(listaDeCompras);

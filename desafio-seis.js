@@ -35,6 +35,21 @@ function somar(num1, num2) {
   return Number(num1) + Number(num2);
 }
 
+function subtrair(num1, num2) {
+  return Number(num1) - Number(num2);
+}
+
+function multiplicar(num1, num2) {
+  return Number(num1) * Number(num2);
+}
+
+function dividir(num1, num2) {
+  return Number(num1) / Number(num2);
+}
+
 // ---------------- a partir da escolha da operação faz algo -------
 
 console.log(somar(numerosOperacao[0], numerosOperacao[1]));
+console.log(subtrair(numerosOperacao[0], numerosOperacao[1]));
+console.log(multiplicar(numerosOperacao[0], numerosOperacao[1]));
+console.log(dividir(numerosOperacao[0], numerosOperacao[1]));

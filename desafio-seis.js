@@ -1,25 +1,24 @@
 const prompt = require("prompt-sync")({ sigint: true });
 
 function somar(num1, num2) {
-  return Number(num1) + Number(num2);
+  return num1 + num2;
 }
 
 function subtrair(num1, num2) {
-  return Number(num1) - Number(num2);
+  return num1 - num2;
 }
 
 function multiplicar(num1, num2) {
-  return Number(num1) * Number(num2);
+  return num1 * num2;
 }
 
 function dividir(num1, num2) {
-  return Number(num1) / Number(num2);
+  return num1 / num2;
 }
 
-const introducao = "Digite dois números para realizar as operações,";
-const introducaoDois = "siga as instruções!";
+const introducao = " Siga as instruções!";
 
-const introducaoCalc = prompt(`${introducao} ${introducaoDois}`);
+const introducaoCalc = prompt(`${introducao}`);
 
 const sim = "S";
 const nao = "N";
@@ -33,8 +32,8 @@ const perguntaOperacao = prompt(
 const primeiroNumero = prompt(`Digite o primeiro número:  `);
 const segundoNumero = prompt(`${primeiroNumero} Digite o segundo número:  `);
 
-numerosOperacao.push(primeiroNumero);
-numerosOperacao.push(segundoNumero);
+numerosOperacao.push(Number(primeiroNumero));
+numerosOperacao.push(Number(segundoNumero));
 
 console.log(numerosOperacao);
 

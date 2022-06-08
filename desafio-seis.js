@@ -7,16 +7,16 @@ const sim = "S";
 const nao = "N";
 let numerosOperacao = [];
 
-// const escolherOperacao = "Digite a operação que você deseja realizar: ";
-// const perguntaOperacao = prompt(
-//   `${escolherOperacao}1- soma 2- subtrai 3- multiplica 4- divide:  `
-// );
+const escolherOperacao = "Digite a operação que você deseja realizar: ";
+const perguntaOperacao = prompt(
+  `${escolherOperacao} 1- soma 2- subtrai 3- multiplica 4- divide:  `
+);
 
 while (true) {
   const perguntaUm = "Deseja adicionar um número para a operação?";
   const resposta = prompt(` ${perguntaUm} Responda ${sim} ou ${nao}  `);
 
-  if (resposta === "N") {
+  if (resposta === "N" || resposta === "n") {
     console.log(`Nenhum número será adicionado a operação!`);
     break;
   }
@@ -49,7 +49,25 @@ function dividir(num1, num2) {
 
 // ---------------- a partir da escolha da operação faz algo -------
 
-console.log(somar(numerosOperacao[0], numerosOperacao[1]));
-console.log(subtrair(numerosOperacao[0], numerosOperacao[1]));
-console.log(multiplicar(numerosOperacao[0], numerosOperacao[1]));
-console.log(dividir(numerosOperacao[0], numerosOperacao[1]));
+// console.log(somar(numerosOperacao[0], numerosOperacao[1]));
+// console.log(subtrair(numerosOperacao[0], numerosOperacao[1]));
+// console.log(multiplicar(numerosOperacao[0], numerosOperacao[1]));
+// console.log(dividir(numerosOperacao[0], numerosOperacao[1]));
+
+// -------------- USAR SWITCH PARA ESCOLHER AS OPERAÇÕES ------------
+switch (perguntaOperacao) {
+  case "1":
+    operacao = somar(numerosOperacao[0], numerosOperacao[1]);
+    break;
+  case "2":
+    operacao = subtrair(numerosOperacao[0], numerosOperacao[1]);
+    break;
+  case "3":
+    operacao = multiplicar(numerosOperacao[0], numerosOperacao[1]);
+    break;
+  case "4":
+    operacao = dividir(numerosOperacao[0], numerosOperacao[1]);
+    break;
+}
+
+console.log(operacao);
